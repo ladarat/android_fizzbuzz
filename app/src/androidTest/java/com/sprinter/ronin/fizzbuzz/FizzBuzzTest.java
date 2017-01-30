@@ -25,13 +25,13 @@ public class FizzBuzzTest extends  ActivityInstrumentationTestCase2<MainActivity
 
     public void testClickButtonNotInputText() {
         onView(withId(R.id.btn_submit)).perform(click());
-        onView(withId(R.id.text_result)).check(matches(withText("กรุณากรอกตัวเลขด้วยเด้อ!")));
+        onView(withId(R.id.text_result)).check(matches(withText("กรุณากรอกตัวเลขด้วย!")));
     }
 
     public void testInputEnDashShouldReturn1AndClick(){
         onView(withId(R.id.text_input)).perform(typeText(String.valueOf("-")));
         onView(withId(R.id.btn_submit)).perform(click());
-        onView(withId(R.id.text_result)).check(matches(withText("กรุณากรอกตัวเลขด้วยเด้อ!")));
+        onView(withId(R.id.text_result)).check(matches(withText("กรุณากรอกตัวเลขด้วย!")));
     }
 
     public void testInput1ShouldReturn1AndClick(){
@@ -62,7 +62,7 @@ public class FizzBuzzTest extends  ActivityInstrumentationTestCase2<MainActivity
         String data = "12345678912345678912";
         onView(withId(R.id.text_input)).perform(typeText(String.valueOf(data)));
         onView(withId(R.id.btn_submit)).perform(click());
-        onView(withId(R.id.text_result)).check(matches(withText("กรอกแต่พองามนะ!")));
+        onView(withId(R.id.text_result)).check(matches(withText("กรอกเยอะไปนะ!")));
     }
 
 }

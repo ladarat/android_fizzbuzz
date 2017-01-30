@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                 Long input_number = Long.parseLong(data_text_input);
                 answer = fizzbuzz.show(input_number);
             }else {
-                answer = "กรุณากรอกตัวเลขด้วยเด้อ!";
+                answer = "กรุณากรอกตัวเลขด้วย!";
             }
             text_result.setText(answer);
         }catch (NumberFormatException errors){
-            text_result.setText("กรอกแต่พองามนะ!");
+            text_result.setText("กรอกเยอะไปนะ!");
         }
     }
 }

@@ -8,5 +8,5 @@ dependencies {
     testCompile androidModule.android.applicationVariants.find({it.name == 'debug'}).javaCompile.outputs.files
     testCompile files(androidModule.android.getBootClasspath())
 
-    testCompile 'junit:junit:4.+'
+    testCompile 'junit:junit:4.12'
 }
